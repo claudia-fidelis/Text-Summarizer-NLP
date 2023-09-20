@@ -1,6 +1,11 @@
+#entity is the return type of a function
 from dataclasses import dataclass
 from pathlib import Path
 
+# data class is a class that is designed to only hold data values. They aren't different from regular classes, 
+# but they usually don't have any other methods. 
+# They are typically used to store information that will be passed between different parts of a program or a system
+#creating a dataclass with frozen=True means its instances are frozen and cannot be changed
 @dataclass(frozen=True)
 class DataIngestionConfig:
     root_dir: Path
